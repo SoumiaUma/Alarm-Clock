@@ -8,3 +8,4 @@ Libraries Used: tkinter,winsound,datetime,and time.
 
 Picture of the application:
 
+<img width="318" alt="alarmClock" src="https://user-images.githubusercontent.com/93685309/140585932-46da703e-915e-444f-8605-0fc1a307cc4a.png">

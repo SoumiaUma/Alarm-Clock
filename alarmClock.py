@@ -9,9 +9,8 @@ def alarm(alarmTime):
     while True:
         time.sleep(1)
         currentTime = datetime.datetime.now()
+        #Used https://docs.python.org/3/library/datetime.html for reference
         exactCurrentTime = currentTime.strftime("%H:%M:%S")
-        date = currentTime.strftime("%d/%m/%Y")
-        print("The Set Date is:",date)
         print(exactCurrentTime)
         if exactCurrentTime == alarmTime:
             print("Time is up!")
@@ -21,8 +20,8 @@ def alarm(alarmTime):
 
 #Retreiving the actual time
 def actualTime():
-    set_alarm_timer = f"{hour.get()}:{min.get()}:{sec.get()}"
-    alarm(set_alarm_timer)
+    alarmTimer = f"{hour.get()}:{min.get()}:{sec.get()}"
+    alarm(alarmTimer)
 
 #Creating the GUI for the alarm clock
 clock = Tk()
